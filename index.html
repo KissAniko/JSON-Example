@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JSON Example</title>
+</head>
+<body>
+        <script type = "text/javascript">
+                let companies = 
+
+                 
+ // {
+  //  "all":
+          `[   
+                
+             {
+                "name" : "John",
+                "age" : 20,
+                "isMarried": false,
+                "stack": ["php", "javascript", "node"],
+                "speakLanguages" : null,
+                "hobbies": ["bowling", "football"],
+                "friends":[
+                              {
+                                 "name": "Marry",
+                                 "age": 20          
+                              },
+                              {
+                                "name": "Harry",
+                                "age": 22         
+                             }
+                           ]
+             },
+             {
+                "name" : "Myke",
+                "age" : 21,
+                "isMarried": false,
+                "stack": ["php", "java", "HTML"],
+                "speakLanguages" : null,
+                "hobbies": ["bowling", "tennis"],
+                "friends":[
+                                {
+                                   "name": "Danis",
+                                   "age": 19         
+                                },
+                                {
+                                  "name": "Gery",
+                                  "age": 22         
+                               }
+                             ]
+             },
+             {
+                "name" : "Ann",
+                "age" : 25,
+                "isMarried": true,
+                "stack": ["C#", "C++", "Python"],
+                "speakLanguages" : null,
+                "hobbies": ["chess", "handball"],
+                "friends":[
+                                {
+                                   "name": "Peter",
+                                   "age": 20         
+                                },
+                                {
+                                  "name": "Zoe",
+                                  "age": 23         
+                               }
+                             ]
+             }
+          ]`
+ 
+ //  }`
+
+
+  // console.log(companies);                           // alt+7 nélkül is működik
+  // console.log(JSON.parse(companies));               // az alt+7 kell, mert anélkül nem indul el.
+  // console.log(JSON.parse(companies)[1].name);       // Myke
+  console.log(JSON.parse(companies)[1].friends[0].age); 
+ 
+        </script>        
+</body>
+</html>
